@@ -3,13 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>AJAX</title>
+    <style>
+    .done{
+      background: green;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+    }
+    #resultat_requete{
+      display: none;
+      width: 40%;
+    }
+    #vaChercher{
+      color: white;
+      background-color: #AAA;
+      width: 200px;
+    }
+    #eliminer{
+      color: white;
+      background-color: red;
+      width: 200px;
+    }
+    </style>
   </head>
   <body>
-
+    <div id="resultat_requete">
+    </div>
 
     <label for="mon_id">Chercher:</label>
     <input id="mon_id" type="text" />
-    <ul>
+
+    <div id="vaChercher">Chercher</div>
+    <div id="eliminer">Eliminer</div>
+
+
+
+
+    <ul id="plats">
       <li>bolo <span id="bolo">X</span></li>
       <li>salade tomate <span id="salade_tomate">X</span></li>
       <li>salade chèvre MIEL <span id="salade_chevre">X</span></li>
